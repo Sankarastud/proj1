@@ -1,7 +1,6 @@
 # Profit & Loss Generator
 
-A free browser-based Profit & Loss statement generator built with HTML, CSS and JavaScript.
-
+A browser-based Profit & Loss statement generator created as a practice project using HTML, CSS, and JavaScript.
 ## Features
 - Add unlimited revenue items
 - Add COGS items
