@@ -22,7 +22,4 @@ This project was created to practice:
 - Git and GitHub
 - GitHub Pages deployment
 
-## Note
-This is a general management tool, not a substitute for professional accounting advice or statutory financial statements.
-
 ## Disclaimer
