@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profit & Loss Generator – Free P&L Statement Tool</title>
+  <meta name="description" content="Create a simple Profit and Loss statement online. Enter income and expenses and instantly calculate gross profit, operating expenses and net profit.">
+  <meta name="keywords" content="profit and loss generator, P&L generator, profit loss statement, income statement generator">
+  <meta name="theme-color" content="#17324d">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="./" class="brand">P&amp;L<span>Generator</span></a>
+    <span class="badge">Free Online Tool</span>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <p class="eyebrow">PROFIT &amp; LOSS STATEMENT</p>
+    <h1>Generate Your P&amp;L in Minutes</h1>
+    <p class="subtitle">Enter your income and expenses to calculate gross profit, operating expenses and net profit instantly.</p>
+  </section>
+
+  <section class="tool-card">
+    <div class="form-panel">
+      <h2>Business Details</h2>
+      <div class="field">
+        <label for="businessName">Business Name</label>
+        <input id="businessName" type="text" placeholder="Your business name">
+      </div>
+      <div class="two-col">
+        <div class="field">
+          <label for="period">Accounting Period</label>
+          <input id="period" type="text" value="FY 2026-27" placeholder="e.g. FY 2026-27">
+        </div>
+        <div class="field">
+          <label for="currency">Currency</label>
+          <select id="currency">
+            <option value="INR">₹ INR</option>
+            <option value="USD">$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option value="GBP">£ GBP</option>
+          </select>
+        </div>
+      </div>
+
+      <h2>Revenue</h2>
+      <div id="revenueItems"></div>
+      <button class="add-btn" id="addRevenue">+ Add Revenue</button>
+
+      <h2>Cost of Goods Sold</h2>
+      <div id="cogsItems"></div>
+      <button class="add-btn" id="addCogs">+ Add COGS</button>
+
+      <h2>Operating Expenses</h2>
+      <div id="expenseItems"></div>
+      <button class="add-btn" id="addExpense">+ Add Expense</button>
+
+      <div class="actions">
+        <button class="primary" id="calculate">Generate P&amp;L</button>
+        <button class="secondary" id="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="result-panel" id="report">
+      <div class="report-head">
+        <div>
+          <p class="result-label">PROFIT &amp; LOSS STATEMENT</p>
+          <h2 id="reportBusiness">Your Business</h2>
+          <p id="reportPeriod">FY 2026-27</p>
+        </div>
+        <button class="copy-btn" id="copy">Copy</button>
+      </div>
+
+      <div class="statement">
+        <div class="statement-row"><span>Total Revenue</span><strong id="totalRevenue">₹0.00</strong></div>
+        <div class="statement-row"><span>Cost of Goods Sold</span><strong id="totalCogs">₹0.00</strong></div>
+        <div class="statement-row highlight"><span>Gross Profit</span><strong id="grossProfit">₹0.00</strong></div>
+        <div class="statement-row"><span>Operating Expenses</span><strong id="totalExpenses">₹0.00</strong></div>
+        <div class="statement-row final"><span>Net Profit</span><strong id="netProfit">₹0.00</strong></div>
+      </div>
+
+      <div class="margin-box">
+        <div><span>Gross Margin</span><strong id="grossMargin">0.00%</strong></div>
+        <div><span>Net Margin</span><strong id="netMargin">0.00%</strong></div>
+      </div>
+
+      <div class="breakdown">
+        <h3>Expense Breakdown</h3>
+        <div id="breakdown"></div>
+      </div>
+
+      <button class="print-btn" id="print">Print / Save as PDF</button>
+      <p class="note">This tool is for management and estimation purposes. Verify figures with your accountant before using a statement for statutory filing.</p>
+    </div>
+  </section>
+
+  <section class="info-grid">
+    <article class="info-card">
+      <h2>What is a Profit &amp; Loss Statement?</h2>
+      <p>A Profit &amp; Loss statement, also called an income statement, summarizes revenue and expenses for a specific accounting period and shows whether the business made a profit or loss.</p>
+    </article>
+    <article class="info-card">
+      <h2>Basic Formula</h2>
+      <div class="formula">
+        <strong>Gross Profit</strong> = Revenue − COGS<br>
+        <strong>Net Profit</strong> = Gross Profit − Operating Expenses
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 P&amp;L Generator</span>
+    <span>Free Profit &amp; Loss Tool</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
