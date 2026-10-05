@@ -23,3 +23,6 @@ This project was created to practice:
 - GitHub Pages deployment
 
 ## Disclaimer
+This is a practice and educational project. It is a general management tool and is not intended to replace professional accounting advice, audited financial statements, or statutory financial statements.
+
+Financial information should be verified by a qualified accounting professional before being used for official purposes.
