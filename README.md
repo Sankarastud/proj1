@@ -13,6 +13,18 @@ A free browser-based Profit & Loss statement generator built with HTML, CSS and 
 - Copy statement
 - Print / Save as PDF
 
+## Purpose
+
+This project was created to practice:
+
+- Front-end web development
+- JavaScript calculations
+- Responsive web design
+- Git and GitHub
+- GitHub Pages deployment
+
 
 ## Note
 This is a general management tool, not a substitute for professional accounting advice or statutory financial statements.
+
+## Disclaimer
